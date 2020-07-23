@@ -1,0 +1,53 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Club - Login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer src="script_.js"></script>
+</head>
+
+<body>
+    <img src="logo.png" alt="logo-full">
+
+    <form name="login-form" novalidate>
+        <div>
+            <div id="email" class="input">
+                <img src="user.png" alt="logo-full" id="iu">
+                <input formnovalidate required type="email" id="inu" />
+                <label id="lu">Email</label>
+            </div>
+            <div class="input" id="span1">
+                <span class="error"></span>
+            </div>
+        </div>
+        <div>
+            <div id="password" class="input">
+                <img src="password.png" alt="logo-full" id="ip">
+                <input formnovalidate required type="password" id="inp" />
+                <label id="lp">Password</label>
+            </div>
+            <div class="input" id="span2">
+                <span class="error"></span>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox"><img src="visibility_off.png" class="checkbox" id="img" /></label>
+            </div>
+
+            <div id="confirm">
+                <div id="hiddenH">
+                    <button type="submit" id="button">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div id="errorMessage"></div>
+</body>
+
+</html>
