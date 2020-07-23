@@ -90,11 +90,11 @@ function customValidate(event) {
     if (error) {
         const message = customMessage(field, error);
 
-        if (message == "E-mail não pode ser vazio" || message == "E-mail não válido") {
+        if (message == "Email cannot be empty" || message == "Email not valid") {
             customColor('lu', 'iu', 'inu', field, 'red');
             setCustomMessage(field, message);
         }
-        else if (message == "Senha não pode ser vazia") {
+        else if (message == "Password cannot be empty") {
             customColor('lp', 'ip', 'inp', field, 'red');
             setCustomMessage(field, message);
         }
@@ -227,14 +227,14 @@ function customColor(labelID, imgID, inputID, field, color) {
 function customMessage(field, typeError) {
     const messages = {
         password: {
-            valueMissing: "Senha não pode ser vazia"
+            valueMissing: "Password cannot be empty"
         },
         text: {
-            valueMissing: "Senha não pode ser vazia"
+            valueMissing: "Password cannot be empty"
         },
         email: {
-            valueMissing: "E-mail não pode ser vazio",
-            typeMismatch: "E-mail não válido"
+            valueMissing: "Email cannot be empty",
+            typeMismatch: "Email not valid"
         },
     }
 
@@ -332,7 +332,7 @@ function errorSpan(div) {
 
     let span = document.createElement('span');
 
-    span.innerHTML = "Usuário não encontrado";
+    span.innerHTML = "User not found";
     span.style.color = trueWhite;
     span.style.backgroundColor = "#ff0037";
     span.style.border = "none";
